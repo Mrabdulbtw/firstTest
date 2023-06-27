@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 0.5px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 85vh;
+}
+
+header h1 {
+    text-align: center;
+    margin: 25px 0;
+    font-size: 24px;
+    color: rgb(7, 25, 109);
+}
+
+header>p {
+    color: rgb(7, 31, 138);
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+
+header p {
+    text-align: center;
+
+
+}
+
+header .breadcrumb {
+    margin-top: 20px;
+    display: flex;
+    border: 1px rgba(40, 42, 43, 0.228) solid;
+    border-left: none;
+    border-right: none;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    align-items: center;
+    column-gap: 10px;
+}
+
+header .breadcrumb p {
+    font-size: 13px;
+    margin-bottom: 6px;
+    color: rgb(9, 9, 156);
+    cursor: pointer;
+}
+
+header .breadcrumb p:hover {
+    color: red;
+}
+
+
+.introduction {
+    margin: auto;
+    width: 85vh;
+    color: rgb(7, 31, 138);
+
+}
+
+.introduction p {
+    margin-top: 20px;
+}
+
+
+
+.first-section {
+    margin: auto;
+    width: 85vh;
+    margin: 25px 0;
+    color: rgb(7, 31, 138);
+}
+
+.first-section p {
+    margin-bottom: 20px;
+}
+
+.first-section h2 {
+    text-decoration: underline;
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: 600;
+
+}
+
+.first-section span {
+    font-weight: bold;
+    margin-top: 10px;
+    color: rgb(8, 36, 163);
+
+}
+
+.first-section ul li {
+    margin-top: 30px;
+}
+
+
+.second-section {
+    margin: auto;
+    width: 85vh;
+    color: rgb(7, 31, 138);
+
+}
+
+.second-section h2 {
+    text-decoration: underline;
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.second-section ul li {
+    margin-top: 30px;
+}
+
+.second-section p:nth-child(6) {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    header .breadcrumb {
+        flex-direction: column;
+    }
+
+    header .breadcrumb p:nth-child(2),
+    header .breadcrumb p:nth-child(4) {
+        transform: rotate(90deg);
+    }
+
+    header,
+    .breadcrumb,
+    .first-section,
+    .introduction,
+    .second-section {
+        margin: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+
+    header,
+    .breadcrumb,
+    .first-section,
+    .introduction,
+    .second-section {
+        margin: 10px;
+    }
+}
